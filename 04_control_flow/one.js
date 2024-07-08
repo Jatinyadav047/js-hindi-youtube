@@ -23,8 +23,9 @@ const temperature = 41
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2"); // Implicit scope "," is used for multiple lines
 
+// -------------------------------------------- USE OF ELSE IF-------------------------------------------------------------------------------------------------------------------------------
 // if (balance < 500) {
 //     console.log("less than 500");
 // } else if (balance < 750) {
