@@ -3,11 +3,11 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 // coding.forEach( function (val){
 //     console.log(val);
 // } )
-
+// --------------- USING ARROW FUNCTION ------------------------------------
 // coding.forEach( (item) => {
 //     console.log(item);
 // } )
-
+// ---------PRINTME--------
 // function printMe(item){
 //     console.log(item);
 // }
