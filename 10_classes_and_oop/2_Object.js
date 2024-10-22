@@ -2,7 +2,7 @@ function multipleBy5(num){
 
     return num*5
 }
-
+//---------------------------Every thing in javaScript is object funtion can also refrence to object----------------------------------------------------
 multipleBy5.power = 2
 
 console.log(multipleBy5(5));

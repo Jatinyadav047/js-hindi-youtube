@@ -41,16 +41,21 @@ const promiseFour = new Promise(function(resolve, reject){
         }
     }, 1000)
 })
-
+// ---------------------------Chaining ---------------------------
+// .catch() is used for errors
  promiseFour
  .then((user) => {
     console.log(user);
     return user.username
-}).then((username) => {
+})
+.then((username) => {
     console.log(username);
-}).catch(function(error){
+})
+.catch(function(error){
     console.log(error);
-}).finally(() => console.log("The promise is either resolved or rejected"))
+})
+.finally(() => console.log("The promise is either resolved or rejected")) // finally is always executed either resolve or rejected
+
 
 
 
@@ -64,7 +69,8 @@ const promiseFive = new Promise(function(resolve, reject){
         }
     }, 1000)
 });
-
+// --------------- Using async await---------------------------------------
+// async await does not catch error so we can use try catch block
 async function consumePromiseFive(){
     try {
         const response = await promiseFive

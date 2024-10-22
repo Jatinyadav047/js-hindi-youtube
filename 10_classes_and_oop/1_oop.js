@@ -1,4 +1,4 @@
-const user = {
+const user = { // object literal
     username: "hitesh",
     loginCount: 8,
     signedIn: true,
@@ -11,7 +11,7 @@ const user = {
 
 }
 
-
+//-----------------Constructor Function ------------------------------------------------------------------------ 
 
 //console.log(user.username)
 //console.log(user.getUserDetails());
@@ -28,10 +28,10 @@ function User(username, loginCount, isLoggedIn){
 
     }
 
-    return this
+    return this // defined implicity not necessary
 }
 
-const userOne = new User("hitesh", 12, true)
+const userOne = new User("hitesh", 12, true) // new kwywoed is used other wise userTwo will over write userOne
 const userTwo = new User("ChaiAurCode", 11, false)
 console.log(userOne.constructor);
 //console.log(userTwo);
